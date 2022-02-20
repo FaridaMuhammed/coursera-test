@@ -5,12 +5,36 @@
 .row {
 	width: 100%;
 }
+h1 {
+	text-align: center;
+	font-family: cursive,fantasy,monospace;
+}
+h4 {
+	text-align: right;
+	font-family: cursive,fantasy,monospace;
+	border: 1px solid black;
+}
+p {
+	font-family: cursive,fantasy,monospace;
+	background-color: gray;
+}
+.col-de-3 h4 {
+	background-color: pink;
+}
+.col-ta-3 h4 {
+	background-color: red;
+	color: white;
+}
+.col-mo-6 h4 {
+	background-color: yellow;
+}
 
 /*** desktop - is 992px and above ***/
 @media (max-width: 992px) {
 	.col-de-1, .col-de-2, .col-de-3, .col-de-4, .col-de-5, .col-de-6, .col-de-7, .col-de-8, .col-de-9,
 	.col-de-10, .col-de-11, .col-de-12 {
 		float: left;
+		border: 2px solid black;
 	} 
 .col-de-1 {
 	width: 8.33%
@@ -53,7 +77,7 @@
 
 /*** tablet - 768px and 991px ***/
 @media (min-width: 768px) and (max-width: 991px) {
-	
+
 }
 
 
@@ -62,6 +86,7 @@
 .col-mo-1, .col-mo-2, .col-mo-3, .col-mo-4, .col-mo-5, .col-mo-6, .col-mo-7, .col-mo-8, .col-de-9,
 	.col-mo-10, .col-mo-11, .col-mo-12 {
 		float: left;
+		border: 2px solid black;
 	} 
 .col-mo-1 {
 	width: 8.33%
