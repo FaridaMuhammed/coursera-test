@@ -1,183 +1,120 @@
 /*** Base styles ***/
 * {
-	box-sizing: border-box;
-}
-.row {
-	width: 100%;
-}
-h1 {
-	margin-bottom: 15px;
-	text-align: center;
-	font-family: cursive,fantasy,monospace;
-}
-strong {
-	/*position:relative; left:540px; top:2px;*/
-	text-align: left;
-	font-family: cursive,fantasy,monospace;
-	font-size: 18px;
-	border: 1px solid black;
-	width: 8%;
-}
-p {
-	font-family: cursive,fantasy,monospace;
-	background-color: gray;
-	margin-left: auto;
-	margin-right: auto;
-	border: 2px solid black;
-	width: 50%
-	height:50px;
-}
-#d_1 strong {
-	background-color: pink;
-}
-#d_2 strong {
-	background-color: red;
-	color: white;
-}
-#d_3 strong {
-	background-color: yellow;
-}
-footer {
-	text-align: center;
-	background-color: gray;
-	font-family: cursive,fantasy,monospace;
-}
+			box-sizing: border-box;
+			margin: 0;
+		}
+		h1 {
+			margin: 100px;
+			margin-bottom: 60px;
+			text-align: center;
+			font-family: cursive,fantasy,monospace;
+		}
+		p {
+			margin-top: 0px;
+			padding: 50px;
+			text-align: left;
+			float: left;
+			
+
+		}
+		section {
+			font-family: cursive,fantasy,monospace;
+			border: 2px solid black;
+			background-color: #828282;
+			width: 30%;
+			margin: 30px;
+			margin-right: 10px;
+			overflow: hidden;
+			position: relative;
+			/*float: left;*/
+		}
+		h4 {
+			text-align: center;
+			border: 2px solid black;
+			width: 15%
+			height:15px;
+			margin-top: 0px;
+			padding: 13px;
+			margin-bottom: 1px;
+			overflow: hidden;
+		}
+		#one {
+			position: relative;
+		}
+		#two {
+			position: relative;
+
+		}
+		#three {
+			position: relative;
+		}
+		#subtitle_1 {
+			background-color: pink;
+			width: 25%;
+			position: absolute; 
+			right: 0px; 
+			float: left;
+
+		}
+		#subtitle_2 {
+			background-color: darkred;
+			color: white;
+			width: 25%;
+			position: absolute; 
+			right: 0px; 
+			float: left;
+		}
+		#subtitle_3 {
+			background-color: yellow;
+			width: 25%;
+			position: absolute; 
+			right: 0px; 
+			float: left;
+		}
+		/*footer {
+			clear:both;
+			bottom: 0;
+			width: 100%;
+			height: 15px;
+			background-color: lightgray;
+			text-align: center;
+		}*/
+		
 
 /*** desktop - is 992px and above ***/
-@media (max-width: 992px) {
-	.col-de-1, .col-de-2, .col-de-3, .col-de-4, .col-de-5, .col-de-6, .col-de-7, .col-de-8, .col-de-9,
-	.col-de-10, .col-de-11, .col-de-12 {
+@media (min-width: 992px) {
+	section {
 		float: left;
-	
-	} 
-.col-de-1 {
-	width: 8.33%
-}		
-.col-de-2 {
-	width: 16.66%
-}
-.col-de-3 {
-	width: 25%
-}
-.col-de-4 {
-	width: 33%
-}
-.col-de-5 {
-	width: 41.66%
-}
-.col-de-6 {
-	width: 50%
-}
-.col-de-7 {
-	width: 58.33%
-}
-.col-de-8 {
-	width: 66.66%
-}
-.col-de-9 {
-	width: 75%
-}
-.col-de-10 {
-	width: 83.33%
-}
-.col-de-11 {
-	width: 91.66%
-}
-.col-de-12 {
-	width: 100%
-}
-}
-
-
-/*** tablet - 768px and 991px ***/
-@media (min-width: 768px) and (max-width: 991px) {
-.col-ta-1, .col-ta-2, .col-ta-3, .col-ta-4, .col-ta-5, .col-ta-6, .col-ta-7, .col-ta-8, .col-ta-9,
-	.col-ta-10, .col-ta-11, .col-ta-12 {
-		float: left;
-		margin: 8px;
+		margin: auto;
+		width: 30%;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 20px;
 	}
-.col-ta-1 {
-	width: 8.33%
-}		
-.col-ta-2 {
-	width: 16.66%
-}
-.col-ta-3 {
-	width: 25%
-}
-.col-ta-4 {
-	width: 33%
-}
-.col-ta-5 {
-	width: 41.66%
-}
-.col-ta-6 {
-	width: 50%
-}
-.col-ta-7 {
-	width: 58.33%
-}
-.col-ta-8 {
-	width: 66.66%
-}
-.col-ta-9 {
-	width: 75%
-}
-.col-ta-10 {
-	width: 83.33%
-}
-.col-ta-11 {
-	width: 91.66%
-}
-.col-ta-12 {
-	width: 100%
-}	 	
-
-}
 
 
-/*** mobile - is equal or less than 767px***/
-@media (min-width: 767px) {
-.col-mo-1, .col-mo-2, .col-mo-3, .col-mo-4, .col-mo-5, .col-mo-6, .col-mo-7, .col-mo-8, .col-mo-9,
-	.col-mo-10, .col-mo-11, .col-mo-12 {
+}
+/****tablet screen****/
+@media (min-width: 768px) and (max-width: 991px) {
+	section {
 		float: left;
-	
-	} 
-.col-mo-1 {
-	width: 8.33%
-}		
-.col-mo-2 {
-	width: 16.66%
+		margin: auto;
+		width: 40%;
+		margin-right: 50px; 
+		margin-bottom: 20px;
+	}
+	.yellow {
+		float: none;
+		margin: auto;
+		width: 100%;
+	}
 }
-.col-mo-3 {
-	width: 25%
+/****mobile phone screen****/
+@media (max-width: 767px) {
+	section {
+		float: none;
+		margin:auto;
+		width: 90%;
+		margin-bottom: 20px;
+	}
 }
-.col-mo-4 {
-	width: 33%
-}
-.col-mo-5 {
-	width: 41.66%
-}
-.col-mo-6 {
-	width: 50%
-}
-.col-mo-7 {
-	width: 58.33%
-}
-.col-mo-8 {
-	width: 66.66%
-}
-.col-mo-9 {
-	width: 75%
-}
-.col-mo-10 {
-	width: 83.33%
-}
-.col-mo-11 {
-	width: 91.66%
-}
-.col-mo-12 {
-	width: 100%
-}
-}
-
