@@ -1,0 +1,53 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	/* Turquoise accent 1 color for brand name: #40E0D0 */
+	background-color: #00BFFF;
+	font-family: cursive,fantasy,monospace;
+}
+#header-nav {
+	background-color: #fff;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand {
+	/*padding-bottom: 80px;*/
+}
+.navbar-brand h1 {
+	color: #00BFFF;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+#nav-list {
+	margin-top: 50px;
+}
+#nav-list a {
+	color: #808080;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #87CEEB;
+}
+.container button.navbar-toggle, .container .icon-bar {
+	border: 1px solid #87CEEB;
+}
+button.navbar-toggle {
+  clear: both;
+  margin-top: -43px;
+}
+/* END HEADER lecture 33 part 1 mint 1:38 */
+
+/******* Large devices only *******/
+
+
+/******* Medium devices only *******/
+
+
+/******* Small devices only *******/
+
+/******* Extral small devices only *******/
