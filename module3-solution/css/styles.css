@@ -24,7 +24,7 @@ body {
 	text-decoration: none;
 }
 #nav-list {
-	margin-top: 50px;
+	margin-top: 0;	
 }
 #nav-list a {
 	color: #808080;
@@ -40,14 +40,71 @@ button.navbar-toggle {
   clear: both;
   margin-top: -43px;
 }
-/* END HEADER lecture 33 part 1 mint 1:38 */
+/* END HEADER */
+
+/* main content */
+
+#main-content h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.inside-container h3{
+	color: black;
+	text-align: center;
+}
+.inside-container p{
+	background-color: #fff;
+	color: black;
+	border: 2px solid #87CEEB;
+}
+.chicken {
+	margin-bottom: 50px;
+}
+.beef {
+	margin-bottom: 50px;
+}
+.sushi {
+	margin-bottom: 50px;
+}
 
 /******* Large devices only *******/
-
+@media (min-width: 1200px) {
+#nav-list {
+	color: white;
+}
+#nav-list a {
+	color: white;
+}
+#nav-list a:hover {
+	background: white;
+}
+}
 
 /******* Medium devices only *******/
-
+@media (min-width: 992px) and (max-width: 1199px) {
+ #nav-list {
+	margin-top: 0;	
+	color: white;
+}
+#nav-list a {
+	color: white;
+}
+#nav-list a:hover {
+	background: white;
+}
+}
 
 /******* Small devices only *******/
-
+@media (min-width: 768px) and (max-width: 991px) {
+#nav-list {
+	margin-top: 50px;	
+}
+}
 /******* Extral small devices only *******/
+@media (max-width: 767px) {
+#nav-list {
+	margin-top: 50px;	
+}
+}
