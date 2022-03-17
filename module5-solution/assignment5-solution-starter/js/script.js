@@ -99,9 +99,18 @@ function buildAndShowHomeHTML (categories) {
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
-    function (homeHtml) {
-      document.querySelector("#main-content")
-      .innerHTML = homeHtml;
+    function (homeHtmlUrl) {
+      $ajaxUtils.sendGetRequest(
+        categoryHtml,
+        function (categoryHtml) {
+          switchMenuToActive();
+
+          var chosenCategoryShortName = 
+            buildAndShowHomeHTML(categories, categoriesTitleHtml);
+
+            insertHtml("#main-content", chosenCategoryShortName);
+        },
+        false);
 
       
 
