@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // On first load, show home view. I found it in lecture 60
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  allCategoriesUrl,
+  homeHtmlUrl,
   // function (responseText) {
   //   document.querySelector("#main-content").innerHTML = responseText;
   // },
