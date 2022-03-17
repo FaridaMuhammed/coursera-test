@@ -106,7 +106,7 @@ function buildAndShowHomeHTML (categories) {
           switchMenuToActive();
 
           var chosenCategoryShortName = 
-            buildAndShowHomeHTML(categories, categoriesTitleHtml);
+            buildAndShowHomeHTML(categories, categoryHtml, categoriesTitleHtml);
 
             insertHtml("#main-content", chosenCategoryShortName);
         },
