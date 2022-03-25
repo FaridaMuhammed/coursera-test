@@ -4,12 +4,16 @@ body {
 	/* Turquoise accent 1 color for brand name: #40E0D0 */
 	background-color: #00BFFF;
 	font-family: cursive,fantasy,monospace;
+	position: relative;
 }
 /* HEADER */
 #header-nav {
 	background-color: #fff;
 	border-radius: 0;
 	border: 0;
+}
+.navbar-header {
+	margin-bottom: 14px;
 }
 .navbar-brand {
 	/*padding-bottom: 80px;*/
@@ -25,9 +29,15 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 }
-#nav-list {
-	margin-top: 0;
+/*I have problem here I can't know how I can delete the space above the 
+chicken nave*/
+/*.navbar-collapse  {
+	margin-top: 0px;
 
+}*/
+
+#nav-list .nav{
+	text-align: right;
 }
 #nav-list a {
 	color: #808080;
@@ -70,25 +80,32 @@ button.navbar-toggle {
 
 /******* Large devices only *******/
 @media (min-width: 1200px) {
-
+#nav-list {
+	text-align: right;
+	border: 2px solid black;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
-
+}
 /******* Medium devices only *******/
 @media (min-width: 992px) and (max-width: 1199px) {
- #nav-list {
-	margin-top: 0;
-}
+
 }
 
 /******* Small devices only *******/
 @media (min-width: 768px) and (max-width: 991px) {
-#nav-list {
-	margin-top: 50px;	
-}
+
 }
 /******* Extral small devices only *******/
 @media (max-width: 767px) {
-#nav-list {
+/*#nav-list {
 	margin-top: 50px;	
+} Because this I has problem in line 31-36*/
+
+/*And this is how to solve the problem*/
+#nav-list {
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 }
